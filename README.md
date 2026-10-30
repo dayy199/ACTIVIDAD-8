@@ -10,31 +10,9 @@
 
 > *"Los datos guardados solo sirven si sabemos hacerles preguntas."*
 
-Taller completo de diseño, normalización y consulta de una base de datos
-para una **empresa agrícola colombiana** con fincas en Cundinamarca, Caldas
-y Boyacá. Cubre DDL, integridad referencial, DML, normalización hasta 3FN
-y visión artificial con YOLO + MySQL.
-Taller completo de diseño, normalización y consulta de una base de datos para una **empresa agrícola colombiana** con fincas en Cundinamarca, Caldas y Boyacá. Cubre **DDL**, **integridad referencial**, **DML**, **normalización hasta 3FN** y **visión artificial con YOLO + MySQL**.
-
 ---
 
-## 👤 Autor
-
-- **Nombre:** Thomas Stev Arismendi
-- **Institución:** SENA
-- **Programa:** PROGRAMACION DE SOFTWARE
-- **Fecha:** Octubre 2026
-| Campo | Detalle |
-|---|---|
-| **Nombre** | Thomas Stev Arismendi |
-| **Programa** | Programación de Software |
-| **Instructor** | Diego Barragán |
-| **Institución** | SENA |
-| **Fecha** | Octubre 2026 |
-
----
-
-## 🎨 Diseño del proyecto
+Diseño del proyecto
 
 El proyecto se estructura en **6 puntos** progresivos que simulan el ciclo de vida completo de una base de datos para una empresa agrícola:
 
@@ -51,8 +29,8 @@ Cada punto resuelve un problema real del negocio: desde crear la tabla `lote` ha
 
 ---
 
-## 🎯 Descripción
-## 📖 Descripción
+ Descripción
+ Descripción
 
 La empresa **AgroDatos** necesita registrar:
 
@@ -71,7 +49,7 @@ El proyecto construye paso a paso la base de datos `agro_campo` en **MySQL**, co
 
 ---
 
-## 🛠️ Tecnologías
+Tecnologías
 
 | Herramienta | Uso |
 |---|---|
@@ -94,7 +72,7 @@ El proyecto construye paso a paso la base de datos `agro_campo` en **MySQL**, co
 
 ---
 
-## 📂 Estructura del repositorio
+Estructura del repositorio
 
 ```
 agro-datos-lab/
@@ -107,8 +85,8 @@ agro-datos-lab/
 
 ---
 
-## 📚 Contenido
-## 📚 Contenido del taller
+Contenido
+Contenido del taller
 
 - [Punto 1 · Modelado y DDL](#punto-1--modelado-y-ddl)
 - [Punto 2 · Integridad referencial e insumos](#punto-2--integridad-referencial-e-insumos)
@@ -178,7 +156,7 @@ Laboratorio 1.
 
 ### 1.4 Pruebas de error (celdas 1.4, 1.5, 1.6)
 
-#### 🔴 Prueba 1.4 — Área negativa (CHECK)
+ Prueba 1.4 — Área negativa (CHECK)
 
 ```sql
 INSERT INTO lote (codigo, id_finca, cultivo, area_ha, fecha_siembra)
@@ -189,7 +167,7 @@ VALUES ('TEST-01', 1, 'papa', -5.00, '2025-05-01');
 **Error:** `(3819, "Check constraint 'chk_area' is violated.")`  
 **Restricción:** `CHECK (area_ha > 0)`.
 
-#### 🔴 Prueba 1.5 — Código duplicado (UNIQUE)
+ Prueba 1.5 — Código duplicado (UNIQUE)
 
 ```sql
 INSERT INTO lote (codigo, id_finca, cultivo, area_ha, fecha_siembra)
@@ -200,7 +178,7 @@ VALUES ('ESP-L01', 1, 'maíz', 2.00, '2025-05-02');
 **Error:** `(1062, "Duplicate entry 'ESP-L01' for key 'lote.codigo'")`  
 **Restricción:** `UNIQUE (codigo)`.
 
-#### 🔴 Prueba 1.6 — Campo obligatorio faltante (NOT NULL)
+Prueba 1.6 — Campo obligatorio faltante (NOT NULL)
 
 ```sql
 INSERT INTO lote (codigo, id_finca, area_ha, fecha_siembra)
@@ -408,7 +386,7 @@ El dato que debió impedirlo es `reingreso_horas = 24` en la tabla `producto`.
 **Cómo mostrarlo en la web:**
 
 ```
-⛔ ACCESO RESTRINGIDO
+ACCESO RESTRINGIDO
 Última aplicación: RoyaStop 250 EC · 10/05/2026 08:00
 Reingreso permitido a partir de: 11/05/2026 08:00
 Faltan: 14 h
