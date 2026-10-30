@@ -1,13 +1,6 @@
 # ACTIVIDAD-8
 
 
-![MySQL](https://img.shields.io/badge/MySQL-8.0.46-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Google Colab](https://img.shields.io/badge/Google-Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
-![YOLO](https://img.shields.io/badge/YOLO-v8-111F68?style=for-the-badge&logo=yolo&logoColor=white)
-![Estado](https://img.shields.io/badge/Estado-Completado-2E7D32?style=for-the-badge)
-![Licencia](https://img.shields.io/badge/Licencia-MIT-yellow?style=for-the-badge)
-
 
 
 ---
@@ -42,10 +35,10 @@ La empresa **AgroDatos** necesita registrar:
 - **Aplicaciones** en campo (lote + producto + operario + fecha + cantidad)
 - **Detecciones de plagas** realizadas por un dron con **YOLO** (visión artificial)
 
-El proyecto construye paso a paso la base de datos `agro_campo` en MySQL,
+El proyecto se hace paso a paso la base de datos `agro_campo` en MySQL,
 con restricciones de integridad, vistas, triggers y consultas que se
 convierten en recomendaciones agronómicas.
-El proyecto construye paso a paso la base de datos `agro_campo` en **MySQL**, con restricciones de integridad, vistas, triggers y consultas que se convierten en **decisiones agronómicas**.
+El proyecto construye  la base de datos `agro_campo` en **MySQL**, con restricciones de integridad, vistas, triggers y consultas que se convierten en **decisiones agronómicas**.
 
 ---
 
